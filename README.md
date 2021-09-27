@@ -1,1 +1,1 @@
-# cpp - basic program code
+# cpp - basic c++ program code

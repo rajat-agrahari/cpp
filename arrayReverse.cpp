@@ -7,10 +7,25 @@ void printArray(int *arr,int n)
 {
     for (int i = 0; i < n; i++)
     {
-       cout<<*arr[i]<<" "; // arr[i] <===> *(arr+i)
+       cout<<arr[i]<<" "; // arr[i] <===> *(arr+i)
     }
-   
-       
+}
+// void swap(int *p,int *q)
+// {
+//     int temp;
+//     temp=*p;
+//     *p=*q;
+//     *p=temp;
+// }
+void reverseArray(int *a,int n)
+{
+    int j=n-1,temp;
+    for (int i = 0; i < j; i++,j--)
+    {
+           temp=a[i];
+           a[i]=a[j];
+           a[j]=temp;
+    }
 }
 int main(){
     int arr[50],n;
@@ -21,7 +36,12 @@ int main(){
     {
        cin>>arr[i];
     }
-    cout<<"Befor reverse array:: "<<arr;    
+    cout<<"Befor reverse array:: ";    
     printArray(arr,n);
+    reverseArray(arr,n);
+
+    cout<<"After reverse array:: ";    
+    printArray(arr,n);
+    
     return 0;
 }

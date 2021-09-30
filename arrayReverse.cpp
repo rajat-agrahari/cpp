@@ -17,6 +17,9 @@ void printArray(int *arr,int n)
 //     *p=*q;
 //     *p=temp;
 // }
+
+// --------1st login swap first and last element then incr, dec index
+// -------2nd login copy array in reverse order in another array then print
 void reverseArray(int *a,int n)
 {
     int j=n-1,temp;
